@@ -3,12 +3,13 @@ import {useNavigate} from 'react-router-dom';
 import {useHistory} from 'react-router-dom';
 
 const Form = () => {
-    const [name,setName] = useState('');
+  const star=['people','films','starships','species'];
+    const [name,setName] = useState(star[0]);
     const [num,setNum] = useState(1);
 
     const navigate=useNavigate();
 
-    const star=['people','films','vehicles','species'];
+    
 
     const submitHandler=(e) =>{
         e.preventDefault();
